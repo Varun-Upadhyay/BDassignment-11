@@ -1,0 +1,47 @@
+Ans 1:- Various sources of Big Data
+        a- Data Storage
+        b- Sensor Data
+        c- Archive
+        d- Media
+        e- Docs
+        f- Social Media
+        g- Machine Log Data
+        h- Public Web
+        i- Business Apps
+        
+Ans 2:- 3 V's of Big Data
+      a-Volume : We currently see the exponential growth in the data storage as the data is now more than text data. 
+                  We can find data in the format of videos, musics and large images on our social media channels. 
+                  It is very common to have Terabytes and Petabytes of the storage system for enterprises.
+                  As the database grows the applications and architecture built to support the data needs to be reevaluated quite often.
+                  Sometimes the same data is re-evaluated with multiple angles and even though the original data is the same the new found intelligence creates explosion of the data. 
+                  The big volume indeed represents Big Data.
+                  
+      b- Velocity : The data growth and social media explosion have changed how we look at the data. 
+                    There was a time when we used to believe that data of yesterday is recent.
+                    The matter of the fact newspapers is still following that logic. However, news channels and radios have changed how fast we receive the news. Today, people reply on social media to update them with the latest happening. 
+                    On social media sometimes a few seconds old messages (a tweet, status updates etc.) is not something interests users. They often discard old messages and pay attention to recent updates.
+                    The data movement is now almost real time and the update window has reduced to fractions of the seconds. 
+                    This high velocity data represent Big Data.
+                    
+      c- Variety :Data can be stored in multiple format. For example database, excel, csv, access or for the matter of the fact, it can be stored in a simple text file.
+                  Sometimes the data is not even in the traditional format as we assume, it may be in the form of video, SMS, pdf or something we might have not thought about it. 
+                  It is the need of the organization to arrange it and make it meaningful. It will be easy to do so if we have data in the same format, however it is not the case most of the time.
+                  The real world have data in many different formats and that is the challenge we need to overcome with the Big Data. This variety of the data represent  represent Big Data.
+                  
+Ans 3:- Horizontal Scaling and Vertical Scaling
+        Vertical Scaling: Suppose you have 10TB database in a mid size amazon machine instance.You can easily say that high query rates can exhaust your servers CPU power, can consume all of your RAM and sometimes you will find the working data set is exceeding your storage capacity. So, now this point, you are thinking about adding more CPU cores, more Storage and more RAM to that instance to improve the query performance.This is what we called Vertical scaling , means adding more CPU power and storage resource to a single instance.
+        Major Benefit: All of your data is in a single machine. No need to manage multiple instance.
+        Major Problem: The problem is the cost efficiency. A powerful machine having large number of CPU and higher RAM capacity is costlier than a set of small size instances.
+
+       Horizontal Scaling (Sharding): Horizontal scaling divides the data set and distributes the data over multiple servers, or shards. So, you can create 10 instance each with 1TB database. Each shard is an independent database, and collectively, the shards make up a single logical database.
+        Major Benefit: All of your data is in smaller chunks so program can process them very fast with parallel job distribution among all instance.
+       Major Problem: The problem is about managing those instances and the complex distributed architecture.
+       
+Ans 4:-Need and Working of Hadoop
+       Apache Hadoop is an open-source software framework used for distributed storage and processing of big data sets using the MapReduce programming model. It consists of computer clusters built from commodity hardware. All the modules in Hadoop are designed with a fundamental assumption that hardware failures are common occurrences and should be automatically handled by the framework
+      Working : Hadoop use two technique for hadle the big data problems .These are 
+      1- HDFC(hadoop distributed file system)
+      2- map and reduce technique
+      HDFS is like the bucket of the Hadoop system: You dump in your data and it sits there all nice and cozy until you want to do something with it, whether that’s running an analysis on it within Hadoop or capturing and exporting a set of data to another tool and performing the analysis there.
+      The data processing framework is the tool used to work with the data itself. By default, this is the Java-based system known as MapReduce.
